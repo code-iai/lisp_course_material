@@ -285,10 +285,6 @@
 
 (add-hook 'slime-mode-hook (lambda () (slime-highlight-edits-mode 0)))
 
-(when (file-exists-p "/PATH/TO/YOUR/hyperspec") ; <- FIXME
-  ;; the last slash in the following is crucial
-  (setq common-lisp-hyperspec-root "file:/PATH/TO/YOUR/hyperspec/")) ; <- FIXME
-
 (eval-after-load 'slime
   '(progn
      ;; Fix for M-, when using it with dired and A
@@ -338,9 +334,3 @@
                 '(lambda ()
                    (interactive)
                    (slime-quit-lisp)))
-
-;;; FIXME
-;;; The line on the very bottom should be added in the end of your ~/.sbclrc
-;;; If you don't have that file in your home, start "roslisp_repl".
-;;; The line should obviously not be commented out.
-;;; (sb-ext:set-sbcl-source-location "/YOUR/PATH/TO/sbcl/")
