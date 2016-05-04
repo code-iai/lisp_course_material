@@ -118,9 +118,8 @@ You need to define that error class yourself."
   (declare (type symbol name)
            (type coordinate coordinate)
            (type grid-world world))
-  (let ((world (create-world)))
-    ;; TODO
-    ))
+  ;; TODO
+  )
 
 (defun add-obstacle-to-world (coordinate world)
   "Adds a new obstacle with coordinate `coordinate' to `world'.
