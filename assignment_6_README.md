@@ -55,10 +55,10 @@ amazing pieces of turtle art, the only thing you will need to add is:
    * spawns (TURTLE-COUNT - 1) number of turtles
    * and calls DRAW on TURTLE-COUNT number of turtles.
  
-   That is, `REPL> (turtle-party 5)` spawns 4 new turtles and sends 5 turtles
-   that are by then living in the turtlesim drawing.
-   For this to work, you need to modify the DRAW function such that
-   LOOP-AT-MOST-EVERY is called only once per TURTLE-PARTY.
+That is, `REPL> (turtle-party 5)` spawns 4 new turtles and sends 5 turtles
+that are by then living in the turtlesim drawing.
+For this to work, you need to modify the DRAW function such that
+LOOP-AT-MOST-EVERY is called only once per TURTLE-PARTY.
 
 You have successfully completed the homework if:
 - your ROS packages compile with `catkin_make`
