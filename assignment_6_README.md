@@ -51,11 +51,10 @@ amazing pieces of turtle art, the only thing you will need to add is:
 (3) In the same file `lisp_turtles/src/turtles/turtle-party.lisp`
     create a function TURTLE-PARTY that takes one argument - TURTLE-COUNT -
     and does the following:
-    
-    (*) starts a new ROS node,
-    (*) spawns (TURTLE-COUNT - 1) number of turtles
-    (*) and calls DRAW on TURTLE-COUNT number of turtles.
-
+   * starts a new ROS node
+   * spawns (TURTLE-COUNT - 1) number of turtles
+   * and calls DRAW on TURTLE-COUNT number of turtles.
+ 
    That is, `REPL> (turtle-party 5)` spawns 4 new turtles and sends 5 turtles
    that are by then living in the turtlesim drawing.
    For this to work, you need to modify the DRAW function such that
