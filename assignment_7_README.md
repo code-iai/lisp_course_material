@@ -9,7 +9,7 @@ Step 1: launch file
 ---------------------
 You will need to have a bunch of ROS nodes running for this task.
 The best way to manage these nodes is to write a launch file for them.
-In the `assignment_7` directory you will find a `launch` subdirectory.
+In the `assignment_7` directory create a `launch` subdirectory.
 In there, create a launch file that would start the following nodes:
 (*) the turtlesim simulator
 (*) the keyboard teleoperation node (you might need it for debugging)
