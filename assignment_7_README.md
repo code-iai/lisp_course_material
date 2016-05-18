@@ -11,10 +11,10 @@ You will need to have a bunch of ROS nodes running for this task.
 The best way to manage these nodes is to write a launch file for them.
 In the `assignment_7` directory create a `launch` subdirectory.
 In there, create a launch file that would start the following nodes:
-(*) the turtlesim simulator
-(*) the keyboard teleoperation node (you might need it for debugging)
-(*) the "shape_server" node of the "turtle_actionlib" ROS package
-(*) two TF transforms broadcasters, for "turtle1" and "turtle2",
+ * the turtlesim simulator
+ * the keyboard teleoperation node (you might need it for debugging)
+ *  the "shape_server" node of the "turtle_actionlib" ROS package
+ * two TF transforms broadcasters, for "turtle1" and "turtle2",
     the ROS package is "turtle_tf", the node is called "turtle_tf_broadcaster"
     and it accepts a parameter "turtle" which is the turtle name.
 Look in the "turtle_tf_demo.launch" file of the "turtle_tf" ROS package
@@ -85,18 +85,20 @@ Create a file "turtlesim-tf.lisp" and write there a function FOLLOW-TURTLE-IN-A-
 which accepts 2 arguments: FOLLOWER-NAME and FOLLOWEE-NAME, which are turtle names,
 e.g. the strings "turtle1" and "turtle2".
 This function
-(*) initializes a new CL-TF:TRANSFORM-LISTENER and a new publisher
+ * initializes a new CL-TF:TRANSFORM-LISTENER and a new publisher
     for turtle command velocities (see the SET-TURTLE-VELOCITY function from
     assignment_6) that will send commands to the turtle called FOLLOWER-NAME.
-(*) in an endless loop with 100 Hz frequency (every 0.01 seconds) it looks
+ * in an endless loop with 100 Hz frequency (every 0.01 seconds) it looks
     up the coordinates of FOLLOWEE-NAME relative to FOLLOWER-NAME and gives
     FOLLOWER-NAME a navigation command.
+
 The navigation command consists of
 - a linear velocity V, in 2D we are only interested in Vx - the X component,
 - and angular velocity W, we are only interested in the angle around the Z axis - Wz.
 Vx defines how fast our turtle moves, Wz defines the direction, i.e. the turning angle.
 Wz = 0 means the turtle moves straight, Wz = PI means it goes backwards,
 Wz = PI/2 means it turns left (right hand rule), and so on.
+
 
             Y
             ^
@@ -105,7 +107,7 @@ Wz = PI/2 means it turns left (right hand rule), and so on.
             |      . .
             |   .    .
             | .Theta .
-------------+--------|----------> X
+    --------+--------|----------> X
           0 |        Tx
             |
 
