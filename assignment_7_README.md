@@ -99,7 +99,7 @@ Vx defines how fast our turtle moves, Wz defines the direction, i.e. the turning
 Wz = 0 means the turtle moves straight, Wz = PI means it goes backwards,
 Wz = PI/2 means it turns left (right hand rule), and so on.
 
-
+```
             Y
             ^
             |
@@ -110,6 +110,7 @@ Wz = PI/2 means it turns left (right hand rule), and so on.
     --------+--------|----------> X
           0 |        Tx
             |
+```
 
 In the illustration above Theta is the angle between the X axis and the
 coordinates of T (T for Turtle).
