@@ -155,7 +155,7 @@ If the entity is outside of boundaries does nothing."))
 the `world' to `window' and prints the `window'."
   (declare (type grid-world world)
            (type drawing-window window))
-  ;; TODO: for all entities in the world call DRAW-IN-WINDOW then call PRINT-WINDOW.
+  ;; TODO: for all entities in the world call ADD-TO-WINDOW then call PRINT-WINDOW.
   )
 
 
