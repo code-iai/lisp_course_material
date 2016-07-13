@@ -161,7 +161,7 @@ the `world' to `window' and prints the `window'."
 
 (defun test-me ()
   "Creates a world. Fills it with obstacles with the coordinates of the grid world
-from Assignment 4. Also creates 5 different robots with different coordinates
+from Assignment 4. Also creates 5 different robots with different randomly generated coordinates
 in this world (ranging in {Row in [0; 14] and Col in [0; 14]}),
 making sure they're not sitting on obstacles.
 Creates a drawing window for the coordinates {Row in [5; 10], Col in [0; 9]} and visualizes
