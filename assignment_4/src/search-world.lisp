@@ -162,7 +162,7 @@ i.e., not diagonally."
       )))
 
 (defun test-me ()
-  (let* ((world *initial-world*)
+  (let* ((world *world*)
          (current-robot-coordinates (find-robot-in-world world)))
 
     ;; set the robot on (1 1)
