@@ -124,6 +124,11 @@ TIPS:
   (ROSLISP:START-ROS-NODE).
 - You can see the commands your Lisp program is sending to the turtle by listening
   to the corresponding topic (`$ rostopic echo /turtle2/cmd_vel`)
-  
+- When looking up a transform with the TF listener, make sure you give it a timeout
+  (as a keyword argument), otherwise, if there is no delay between creating the
+  TF listener and looking up a transform, the listener will have no time to cache any
+  transforms and a "No transforms published" error will be thrown. The same will happen
+  when the network will go down for more than 10 seconds and there will be no transforms
+  published in that time.
   
   
