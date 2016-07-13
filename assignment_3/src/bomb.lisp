@@ -5,7 +5,7 @@
 ;;; and meanwhile the task for this week is to implement a bomb as a closure
 ;;; and ask the user to try to neutralize it.
 
-;;; A bomb has a number of wires of different colors situated sequentially
+;;; A bomb has a number of wires of different (unique) colors situated sequentially
 ;;; within the mechanism. The mechanism is concealed, so it is impossible
 ;;; to know what is the sequence of colors inside the bomb.
 ;;; Below a bomb with 5 wires is illustrated.
