@@ -50,17 +50,17 @@ The following symbols are used to represent things in the world:
             (11 4) (11 8) (11 9) (11 10) (11 11) (11 12) (11 13)
             (12 2) (12 8) (12 9) (12 10) (12 11) (12 12) (12 13))))
 
-(defvar *treasure-num* 10
+(defconstant +treasure-num+ 10
   "Number of treasure cells to spawn in the world")
 
-(defvar *fuel-num* 50
+(defconstant +fuel-num+ 50
   "Number of fuel cells of the robot")
 
 (defun initialize-world ()
   "This function initializes the world.
 1. It throws treasure randomly around the world. If the treasure falls only a wall,
 you cannot collect it from there, so a wall stays a wall.
-Overall, there should be *treasure-num* number of treasure lying around on the ground after
+Overall, there should be +treasure-num+ number of treasure lying around on the ground after
 this function is called.
 2. It spawns the robot on a random place on the ground.
 3. It resets all global variables so that one could play the treasure hunting game multiple
@@ -92,7 +92,7 @@ world state (value of *world*)."
 
 (defun discover-world ()
   "Autonomously flies the robot in the world until all the treasure is collected.
-The robot can only fly *fuel-num* times.
+The robot can only fly +fuel-num+ times.
 The robot has access to the world state *world* and can read the coordinates of treasure."
   ;; ToDo: implement
   )
