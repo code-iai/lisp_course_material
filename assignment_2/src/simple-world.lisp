@@ -11,6 +11,8 @@
 ;;; Below is a sceleton code of the program. You can add new variables and
 ;;; new helper functions. The main function is DISCOVER-WORLD.
 
+;;; NOTE TO SELF: it's probably better to teach the local variables from the beginning
+
 (defvar *world*
   #2A((w g g g g g w g g g w g g g)
       (w g g g g g w g g g w g g g)
